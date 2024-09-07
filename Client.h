@@ -20,6 +20,10 @@ public:
 	}
 	// Parametrized constructor
 	Client(string name , string password,int id ,double balance):Person(name,password,id) {
+	    	this -> name = name;
+		this -> password = password;
+		this -> id = id;
+
 		if (Validation::ValidateBalance(balance)) {
 			this ->balance = balance;
 		}

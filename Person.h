@@ -1,6 +1,7 @@
 #ifndef PERSON_H
 #define PERSON_H
 #include <iostream>
+#include "Validation.h"
 using namespace std;
 #include <string>
 class Person {
@@ -55,7 +56,7 @@ public:
 		return this->id == id && this->password == password;
 	}
 	virtual void display() {
-		cout << "Name is " << name << endl;
+	    cout << "Name is " << name << endl;
 		cout << "ID = " << id << endl;
 
 	}
